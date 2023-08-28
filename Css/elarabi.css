@@ -1,0 +1,467 @@
+/* Start global rules */
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Cairo/Cairo-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-Light.woff2") format("woff2"),
+    url("../fonts/Cairo/Cairo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-Regular.woff2") format("woff2"),
+    url("../fonts/Cairo/Cairo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hanimation Arabic";
+  font-size: 18px;
+  direction: rtl;
+
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* End global rules */
+/* Start Header */
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/Path\ 3052.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+.contact-header {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-header .column-left {
+  display: flex;
+  gap: 20px;
+  width: 25.8%;
+}
+
+.contact-header .column-left .contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232F41;
+  color: white;
+  width: 39.9%;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.contact-header .column-left .whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  width: 54.3%;
+  border-radius: 30px;
+  position: relative;
+  padding: 20px;
+
+}
+
+
+
+.contact-header .column-left .whatsapp a::before {
+  position: absolute;
+  content: "";
+  font-weight: 600;
+  top: 29%;
+  left: 77%;
+  background-image: url(../Images/whatsapp-line.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  padding: 1px;
+}
+
+.contact-header .column-left li:first-of-type a,
+.contact-header .column-left li:nth-of-type(2) a {
+  color: white;
+}
+
+.contact-header .column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  width: 50.5%;
+}
+
+.contact-header .column-center li a {
+  color: #A3ABB5;
+}
+
+.contact-header .column-center li a:hover {
+  color: #00a7f6;
+}
+
+
+.contact-header .column-center li:first-child a,
+.contact-header .column-center li:nth-of-type(2) a {
+  position: relative;
+}
+
+.contact-header .column-center li:first-child a::before,
+.contact-header .column-center li:nth-of-type(2) a::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f078";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.contact-header .column-center li:first-child:hover a::before,
+.contact-header .column-center li:nth-of-type(2):hover a:before {
+  top: -3px;
+}
+
+/*End Header*/
+
+/* Start Design Store */
+.design-store {
+  padding-top: 100px;
+}
+
+.design-store .design {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+  gap: 35px;
+}
+
+
+.design-store .design .info {
+  text-align: right;
+  padding-top: 140px;
+}
+
+.design-store .design .info h4 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #232f41;
+  margin: 20px 0;
+}
+
+.design-store .design .info h3 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #00a7f6;
+  margin: 0px 0px 40px 0
+}
+
+.design-store .design .info p {
+  font-size: 19px;
+  font-weight: normal;
+  color: #5e646b;
+  line-height: 1.6;
+}
+
+/* End Design Store */
+
+
+/* Start Why need store*/
+.why-need-store {
+  padding-top: 50px;
+}
+
+.why-need-store .store {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+
+}
+
+.why-need-store .store .info .title {
+  padding-bottom: 80px;
+}
+
+.why-need-store .store .info .title h3 {
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  color: #232f41;
+}
+
+
+.why-need-store .store .info .needs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #5e646b;
+}
+
+
+.why-need-store .store .info .needs p::before {
+  background-image: url(../Images/p.png);
+  content: "";
+  background-repeat: no-repeat;
+  padding: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* End Why need store */
+
+/* Start Gallery Store */
+
+.gallery-store {
+  padding-top: 100px;
+  position: relative;
+}
+
+.gallery-store::before {
+  position: absolute;
+  content: "";
+  background-image: url(/Images/Path\ 279.png);
+  width: 100%;
+  height: 839.92px;
+  top: 282px;
+  left: 0;
+  z-index: -1;
+}
+
+
+.gallery-store .title {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: #232F41;
+  font-weight: normal;
+}
+
+.gallery-store .title::before {
+  background-image: url(../Images/p.png);
+  content: "";
+  background-repeat: no-repeat;
+  padding: 10px 20px;
+  margin-left: 20px;
+  position: relative;
+  top: -40px;
+  right: 155px;
+}
+
+.gallery-store .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+.gallery-store .gallery img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* End Gallery Store*/
+
+/* Start Features */
+.features .title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+  color: #232f41;
+  padding-top: 60px;
+}
+
+.features .info {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.features .info i {
+  background-color: #00A7F6;
+  color: white;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 115px;
+  position: relative;
+}
+
+.features .info i::after {
+  position: absolute;
+  content: "";
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 1px solid #37517E;
+  top: 0px;
+  left: -10px;
+}
+
+.features .info h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #232f41;
+  padding: 20px 0;
+}
+
+.features .info p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #5e646b;
+}
+
+/* End Features */
+/*Start Footer */
+.footer-title {
+  margin: 0 auto 100px auto;
+  background-color: #25D366;
+  width: 15.3%;
+  border-radius: 28px;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  min-width: fit-content;
+}
+
+.footer {
+  padding-top: 25px;
+  background-color: #243347;
+  min-width: fit-content;
+}
+
+.footer .container {
+  padding-top: 50px;
+  color: #ffffff;
+}
+
+.footer .contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 40px;
+  padding-bottom: 50px;
+  text-align: right;
+}
+
+
+.footer .contact .links {
+  padding-right: 200px;
+}
+
+.footer .sub-title {
+  padding-bottom: 40px;
+}
+
+.footer .footer-logo {
+  padding-bottom: 18px;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer .contact .info p,
+.footer .contact .links ul li {
+  line-height: 1.6;
+}
+
+.footer .contact .contact-us .phone a {
+  position: relative;
+  line-height: 1.6;
+}
+
+.footer .contact .contact-us .phone a::before {
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  content: "\f095";
+  font-weight: 600;
+  top: -10px;
+  right: -30px;
+}
+
+.footer .contact .contact-us .web a {
+  position: relative;
+}
+
+.footer .contact .contact-us .web a::before {
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  content: "\f27a";
+  font-weight: 600;
+  top: 0;
+  right: -30px;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.footer .social .social-media i {
+  padding-left: 40px;
+}
+
+.footer .social .social-media i:hover,
+.footer .contact .contact-us a:hover {
+  color: #00a7f6;
+
+}
+
+/* End Footer */
